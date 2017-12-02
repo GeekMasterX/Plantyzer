@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.terna.e_plant.WaterSupplyActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#03c3d1"
+            android:text="Water Supply"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="30dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="org.terna.ultrasonic_activity.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:background="#00e5ff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_weight="1.2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_weight="6"
+                        android:id="@id/Title"
+                        android:gravity="center"
+                        android:text="Water Supply Level"
+                        android:textColor="#0b555e"
+                        android:textSize="25sp"
+                        android:background="#c1f6f9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                    <LinearLayout
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:background="@drawable/edittextstyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <me.itangqi.waveloadingview.WaveLoadingView
+                                android:id="@id/wave_loading_view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:wlv_borderColor="#00cbd7"
+                                app:wlv_borderWidth="2dp"
+                                app:wlv_shapeType="rectangle"
+                                app:wlv_round_rectangle="true"
+                                app:wlv_waveAmplitude="90"
+                                app:wlv_waveColor="#00e5ff" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+                    <TextView
+                        android:id="@id/text1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="22dp"
+                        android:textColor="#0b555e"
+                        android:text="Current Water Supply : "
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="1dp"
+                        android:background="#FF00E6FF"/>
+
+                    <TextView
+                        android:id="@id/text3"
+                        android:text="Sufficient Water Supply"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="22dp"
+                        android:textColor="#0b555e"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

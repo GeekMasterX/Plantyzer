@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.terna.e_plant.MoistureActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <TextView
+            android:id="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#03c3d1"
+            android:text="Plant Moisture"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="30dp"/>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="org.terna.e_plant.MoistureActivity"
+        tools:showIn="@layout/activity_main">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:background="#00e5ff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_weight="3"
+                        android:id="@id/waterTitle"
+                        android:gravity="center"
+                        android:text="Moisture Level"
+                        android:textSize="25sp"
+                        android:background="#c1f6f9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <!--<TextView-->
+                    <!--android:layout_width="300dp"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#FF00E6FF"/>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_weight="3.3"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--</LinearLayout>-->
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_weight="90"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="20"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_weight="11.9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                </LinearLayout>
+
+                                <me.itangqi.waveloadingview.WaveLoadingView
+                                    android:id="@id/wave_loading_view"
+                                    android:layout_width="200dp"
+                                    android:layout_height="200dp"
+                                    android:layout_centerHorizontal="true"
+                                    app:wlv_borderColor="#00cbd7"
+                                    app:wlv_borderWidth="0.5dp"
+                                    app:wlv_shapeType="circle"
+                                    app:wlv_round_rectangle="true"
+                                    app:wlv_triangle_direction="north"
+                                    android:layout_weight="0.1"
+
+
+                                    app:wlv_waveAmplitude="70"
+                                    app:wlv_waveColor="#00e5ff"
+
+                                    />
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_weight="10"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@id/currentStatus"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="(Current Status)   "
+                                        android:layout_centerHorizontal="true"
+                                        android:textSize="18sp"
+                                        />
+
+                                    <TextView
+                                        android:id="@id/moistureLevel"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:textSize="22sp">
+
+                                    </TextView>
+
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="70"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+                                android:layout_width="wrap_content"
+                                android:layout_height="260dp"
+                                android:layout_below="@id/waterTitle"
+                                android:layout_toRightOf="@id/wave_loading_view">
+                                <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+                                    android:id="@+id/custom_seekbar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="266dp"
+                                    android:max="100"
+                                    android:progressDrawable="@drawable/custom_progress"
+                                    android:thumb="@drawable/thumb"
+                                    android:splitTrack="false"
+                                    app:seekBarRotation="CW270" /> <!-- Rotation: CW90 or CW270 -->
+                            </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="1dp"
+                        android:background="#FF00E6FF"/>
+
+                    <TextView
+                        android:id="@id/setMoisture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="Set Moisture Level : "
+                        android:textSize="22dp">
+
+
+                    </TextView>
+
+
+                    <TextView
+                        android:layout_weight="3.3"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="match_parent"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                >
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_weight="69"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="Motor Status"
+                            android:textSize="25dp"
+                            android:background="#c1f6f9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+                    <!--<TextView-->
+                    <!--android:layout_width="300dp"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:background="#FF00E6FF"/>-->
+
+
+                    <LinearLayout
+                        android:layout_weight="45"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_weight="60"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+                            <com.kyleduo.switchbutton.SwitchButton
+                                android:id="@id/toggel"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                app:kswThumbDrawable="@drawable/toggel_thumb"
+                                app:kswThumbWidth="40dp"
+                                app:kswThumbHeight="40dp"
+                                app:kswTextOn="ON"
+                                app:kswTextOff="OFF"
+                                app:kswBackColor="#79ebf1"
+                                app:kswFadeBack="true"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@id/motorStatus"
+                            android:layout_weight="40"
+                            android:text="Stopped"
+                            android:paddingLeft="30dp"
+                            android:gravity="center_vertical"
+                            android:textSize="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

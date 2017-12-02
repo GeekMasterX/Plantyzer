@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@id/MoistureLevel"
+            
+            android:icon="@drawable/ic_pool_black_24dp"
+            android:title="Set Plant Water-Level" />
+
+        <item
+            android:id="@id/WaterSupply"
+            android:icon="@drawable/ic_invert_colors_black_24dp"
+            android:title="WaterSupply-Leve" />
+    </group>
+
+</menu>

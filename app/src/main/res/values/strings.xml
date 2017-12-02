@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">E-Plant</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_front">FrontActivity</string>
+    <string name="title_activity_moisture">MoistureActivity</string>
+    <string name="title_activity_calender">CalenderActivity</string>
+    <string name="title_activity_graph">GraphActivity</string>
+    <string name="title_activity_water_supply">WaterSupplyActivity</string>
+
+</resources>

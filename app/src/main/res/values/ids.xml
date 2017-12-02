@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="Home" type="id">Home</item>
+    <item name="MoistureLevel" type="id">MoistureLevel</item>
+    <item name="Daily_Records" type="id">Daily_Records</item>
+    <item name="Graphs" type="id">Graphs</item>
+    <item name="WaterSupply" type="id">WaterSupply</item>
+    <item name="textViewPlant" type="id">textViewPlant</item>
+    <item name="waterTitle" type="id">waterTitle</item>
+    <item name="wave_loading_view" type="id">wave_loading_view</item>
+    <item name="currentStatus" type="id">currentStatus</item>
+    <item name="moistureLevel" type="id">moistureLevel</item>
+    <item name="setMoisture" type="id">setMoisture</item>
+    <item name="toggel" type="id">toggel</item>
+    <item name="motorStatus" type="id">motorStatus</item>
+    <item name="toolbar" type="id">toolbar</item>
+    <item name="calendarCard" type="id">calendarCard</item>
+    <item name="date" type="id">date</item>
+    <item name="test" type="id">test</item>
+    <item name="Chart" type="id">Chart</item>
+    <item name="MoistureChart" type="id">MoistureChart</item>
+    <item name="Title" type="id">Title</item>
+    <item name="wave_loading_view2" type="id">wave_loading_view2</item>
+    <item name="MoistureChart1" type="id">MoistureChart1</item>
+    <item name="MoistureChart2" type="id">MoistureChart2</item>
+    <item name="text1" type="id">text1</item>
+    <item name="text3" type="id">text3</item>
+</resources>
